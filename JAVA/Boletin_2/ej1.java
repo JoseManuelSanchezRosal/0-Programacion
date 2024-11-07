@@ -1,0 +1,19 @@
+/* 1. Leer un numero y mostrar su cuadrado, repetir el proceso hasta que se introduzca un numero negativo */
+
+import java.util.Scanner;
+
+public class ej1 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce numero: "); double num = sc.nextInt();
+        
+        do {
+            num = Math.pow(num, 2);// Se puede hacer con Math.pow(num, 2) o con System out prntln(num * num)
+            System.out.println(num);
+            System.out.println("Introduce numero: "); num = sc.nextDouble();
+        } while (num >= 0);
+        System.out.println("Saliendo del bucle...");
+    }
+}
