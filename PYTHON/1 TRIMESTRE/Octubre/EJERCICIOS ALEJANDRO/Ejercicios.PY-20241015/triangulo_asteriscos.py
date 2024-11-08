@@ -1,0 +1,27 @@
+# Dibujar un triangulo de asteriscos con altura N
+
+# El ejercicio solicita leer un numero entero N del teclado para dibujar un triángulo de asteriscos
+
+# Se deben definir al menos 3 subprogramas
+
+# Ejemplo de Output: Triangulo de altura 4
+
+# *
+# ***
+# *****
+# *******
+
+def dibujar_linea():
+    print("*", end="")
+
+def dibujar_triangulo(n):
+    for i in range(1, n+1):
+        for j in range(2*i-1):
+            dibujar_linea()
+        print()
+        
+def main():
+    n = int(input("Introduce la altura del tri: "))
+    dibujar_triangulo(n)
+
+main()

@@ -10,7 +10,7 @@ public class variables_booleanas5
         boolean parar = false;
 
         // Podemos asignar el resultado de una expresion logica a este tipo de variables:
-        boolean seguir = 3 > 5; //false
-        boolean parar = 7 != 6; //true
+        seguir = 3 > 5; //false
+        parar = 7 != 6; //true
     }
 }

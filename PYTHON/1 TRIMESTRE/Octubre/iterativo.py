@@ -1,0 +1,3 @@
+import funciones_iterativas
+
+print(funciones_iterativas.factorial_iterativo(1))

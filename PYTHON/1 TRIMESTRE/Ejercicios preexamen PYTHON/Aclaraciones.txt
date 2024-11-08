@@ -1,0 +1,3 @@
+Te he entregado 3 bloques por separado. El menú para navegar por la pizzería. El menú para crear tu pizza y guardarla en un diccionario. Y otro archivo para guardar los datos de cliente en otro.
+Es lo que me ha dado tiempo, siento que puedo dar más y así será.
+Me llevaré el examen a casa parea hacerlo este fin de semana.
