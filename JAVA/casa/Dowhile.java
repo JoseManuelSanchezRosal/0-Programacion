@@ -7,5 +7,10 @@ public class Dowhile
             System.out.println("El valor de i es: " + i);
             i++;
         } while (i < 5); //.....mientras i sea menor que 5
+
+
+        //Prueba de metodo producto de la clase calculadora.
+        double f = calculadora.producto(5, 7);
+        System.out.println(f);
     }
 }

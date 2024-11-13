@@ -8,7 +8,6 @@ public class Bol2_ej23 {
 
         int num;
         boolean tres = false;
-        int mul = 0;
 
         for (int i = 1; i < 6; i++) {
             System.out.println("Introduzca numero: ");
@@ -17,7 +16,7 @@ public class Bol2_ej23 {
                 tres = true;
 
         }
-        if (tres == true)
+        if (tres)// Tenia puesto tres == true, nos lanza un error de redundancia.
             System.out.println("Si hay multiplo de 3");
             else
                 System.out.println("No hay multiplo de 3");
