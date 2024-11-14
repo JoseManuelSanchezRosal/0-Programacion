@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class calculadora {
-    // Creamos metodos para suma, resta, producto y division
+    /** Creamos metodos para suma, resta, producto y division*/
     public static double suma(double a, double b){
         return a + b;
     }
@@ -14,8 +14,13 @@ public class calculadora {
     public static double division(double a, double b){
         return a / b;
     }
+    /**Metodo que nos devuelve el iva en funcion del precio y del tanto por ciento del mismo*/
     public static double iva(double precio, double porciento){
         return (precio * porciento)/100;
+    }
+    /**Metodo que nos devuelve el area de un circulo*/
+    public static double areaCirculo(double r){
+        return(Math.PI * r * r);
     }
 
     public static void main(String[] arg){
@@ -42,6 +47,7 @@ public class calculadora {
         
         System.out.println(producto(4, 6));
         System.out.println(division(10, 5));
+        System.out.println(areaCirculo(5));
 
 
 
