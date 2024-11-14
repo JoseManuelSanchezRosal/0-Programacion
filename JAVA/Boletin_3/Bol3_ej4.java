@@ -12,6 +12,7 @@ public class Bol3_ej4 {
             for (int j = 0; j < lados; j++) {
                 System.out.print(" * ");
             }
+
             System.out.println();
         }
     }
