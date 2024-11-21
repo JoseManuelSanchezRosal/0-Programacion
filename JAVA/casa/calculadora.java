@@ -33,14 +33,19 @@ public class calculadora {
         System.out.println(suma(5, 4));
         System.out.println(resta(5, 3));
 
-        // Tambien podemos pedir por teclado las variables y luego, aplicarles nuestro metodo.
+        /**
+         * Tambien podemos pedir por teclado las variables y luego, aplicarles nuestro metodo.
+          */
+
         double num1, num2;//Declaramos las 2 variables
         System.out.println("Introduce numero 1: ");
         num1 = sc.nextDouble();//Las pedimos por teclado
         System.out.println("Introduce numero 2: ");
         num2 = sc.nextDouble();//Las pedimos por teclado
 
-        //LA BUENA PRAXIS ES, CREARNOS UNA VARIABLE A LA QUE LE APLICAREMOS NUESTRO METODO
+        /**
+         * LA BUENA PRAXIS ES, CREARNOS UNA VARIABLE A LA QUE LE APLICAREMOS NUESTRO METODO
+         **/
         resultado = producto(num1, num2);
         System.out.println(resultado);
 
@@ -48,8 +53,5 @@ public class calculadora {
         System.out.println(producto(4, 6));
         System.out.println(division(10, 5));
         System.out.println(areaCirculo(5));
-
-
-
     }
 }
