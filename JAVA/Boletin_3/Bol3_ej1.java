@@ -4,7 +4,6 @@ public class Bol3_ej1 {
     public static void main(String[] arg){
         // Variables
         int suma, i, j;
-
         // Bucle exterior (i va de 1 a 4)
         for (i = 1; i <= 4; i++) {
             // Bucle interior (j va de 3 a 0, decrementando)
