@@ -16,5 +16,13 @@ public class Bol3_ej5 {
                 }
             }
         }
+        for (int z = 0; z < 15; z++){
+            System.out.println("Hola que pasooo");
+            for (int x = 0; x < 15; x++){
+                System.out.print("+");
+            }
+            System.out.println();
+        }
     }
+
 }
