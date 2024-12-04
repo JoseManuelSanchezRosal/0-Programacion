@@ -28,7 +28,7 @@ public class ej7_Expocoches {
         int numero_entradas;
 
         Scanner sc = new Scanner(System.in);
-        
+
         System.out.println("Seleccione opcion: \n 1. Mostrar entradas. \n 2. Vender entradas. \n 3. Salir");
         opcion = sc.nextInt();
 
