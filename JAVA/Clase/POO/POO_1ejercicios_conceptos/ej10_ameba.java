@@ -1,7 +1,5 @@
 /** Ejercicio 10. Las amebas son seres unicelulares de forma cambiante ya que carecen de pared celular. Fagocitan
  * cualquier cosa que se les pone por delante. Crea la clase ameba
- *
- *
  */
 package POO_1ejercicios_conceptos;
 public class ej10_ameba {
