@@ -14,7 +14,4 @@ public class MainAmeba {
         a1.come(45);
 
     }
-
-
-
 }
