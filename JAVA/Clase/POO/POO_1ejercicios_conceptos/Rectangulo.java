@@ -43,6 +43,5 @@ public class Rectangulo {
         Rectangulo rect1 = new Rectangulo(5, 5);
         Rectangulo rect2 = new Rectangulo(2, 7);
         System.out.println(rect1.getcontadorR());
-
     }
 }
