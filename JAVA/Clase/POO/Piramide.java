@@ -18,7 +18,6 @@ public class Piramide {
         int espacios = altura -1;
         int planta = 1;
         int longitudLinea = 1;
-
         while (planta<= this.altura){
             //insercion de espacios
             for (int i = 1; i <= espacios; i++){
@@ -27,7 +26,7 @@ public class Piramide {
 
 
             //linea de piramide
-            for (int i = 1; i <= planta; i++){
+            for (int i = 1; i <= longitudLinea; i++){
                 cadena += "*";
 
             }
@@ -38,7 +37,6 @@ public class Piramide {
         }
         return cadena;
     }
-
     public static void main(String[] args) {
         Piramide pir1 = new Piramide(4);
         Piramide pir2 = new Piramide(7);
