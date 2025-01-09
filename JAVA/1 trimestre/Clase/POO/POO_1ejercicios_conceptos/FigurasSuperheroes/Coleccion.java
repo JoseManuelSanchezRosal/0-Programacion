@@ -58,5 +58,63 @@ public class Coleccion {
             } else System.out.println("El codigo no coincide con ninguna figura");
         }
     }
-    
+    public void bajarPrecio(double cantidad, String codigo){
+        for (Figura f: listaColeccion){
+            if (f.getCodigo() == codigo){
+                f.bajarPrecio(cantidad);
+                System.out.println("Precio figura "+ f.getSuperheroe()+" disminuido");
+            }else System.out.println("El codigo no coincide con ninguna figura");
+        }
+    }
+    //METODO PARA RETORNAR LISTA DE SUPERHEROES CON CAPA MEDIANTE ARRAYLIST:
+    /*public ArrayList<String> conCapa(){
+        ArrayList<String> superheroeConCapa = new ArrayList<>();
+        for (Figura f: listaColeccion){
+            if (f.getSuperheroe().isCapa()){
+                superheroeConCapa.add(f.getSuperheroe().getNombre());
+            }
+        }
+        return superheroeConCapa;
+    }*/
+    //METODO CONCAPA MEDIANTE STRINGBUILDER:
+    public StringBuilder conCapa(){
+        StringBuilder sb = new StringBuilder();
+        for (Figura f: listaColeccion){
+            if (f.getSuperheroe().isCapa()){
+                sb.append(f.getSuperheroe().getNombre());
+            }
+        }
+        return sb;
+    }
+
+    //METODO PARA RETORNAR EL MAS VALIOSO:
+    public String masValioso(){
+        String figuraCara = "";
+        double masCaro = 0;
+        for (Figura f: listaColeccion){
+            if (f.getPrecio() > masCaro){
+                masCaro = f.getPrecio();
+                figuraCara = f.getSuperheroe().getNombre();
+            }
+        }
+        return figuraCara;
+    }
+
+    //METODO PARA DEVOLVER EL VALOR TOTAL DE LA COLECCION:
+    public double getValorColeccion(){
+        double total = 0;
+        for (Figura f: listaColeccion){
+            total += f.getPrecio();
+        }
+        return total;
+    }
+
+    //METODO PARA DEVOLVER EL VOLUMEN TOTAL DE LA COLECCION:
+    public double getVolumenTotal(){
+        double volTotal = 0;
+        for (Figura f: listaColeccion){
+            volTotal += f.getDimension().getVolumen();
+        }
+        return volTotal + 200;
+    }
 }
