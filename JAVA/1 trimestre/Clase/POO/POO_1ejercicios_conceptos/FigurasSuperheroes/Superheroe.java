@@ -7,6 +7,8 @@ public class Superheroe {
 //CONSTRUCTOR:
     Superheroe(String nombre){
         this.nombre = nombre;
+        this.descripcion = "";
+        this.capa = false;
     }
 //METODOS GET Y SET:
     public String getNombre() {
