@@ -1,6 +1,6 @@
 // Ejercicio 1. Escribe un programa en el que se declaren las variables enteras X e Y. Asignales los valores 144 y 999 respectivamente
 // A continuacion, muestra por pantalla el valor de cada variable, la suma, la resta, la division y la multiplicacion:
-
+package bloque_ej_1;
 public class bloque1_ej1
 {
     public static void main(String[] args) 

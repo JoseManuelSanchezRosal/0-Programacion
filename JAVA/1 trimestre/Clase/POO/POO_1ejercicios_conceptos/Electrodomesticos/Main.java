@@ -1,9 +1,9 @@
-package POO.POO_1ejercicios_conceptos.Electrodomesticos;
+package Electrodomesticos;
 
 public class Main {
     public static void main(String[] args) {
-        Electrodomestico lavadora = new Electrodomestico("lavado", "LG", 2500);
-        System.out.println("El consumo de de la lavadora es de: " + lavadora.getConsumo(5) + " watios");
-        System.out.println(lavadora);
+        Electrodomesticos.Electrodomestico secador = new Electrodomesticos.Electrodomestico("Secador", "LG", 1500);
+        System.out.println(secador.getCosteConsumo(3, 0.15));
+
     }
 }

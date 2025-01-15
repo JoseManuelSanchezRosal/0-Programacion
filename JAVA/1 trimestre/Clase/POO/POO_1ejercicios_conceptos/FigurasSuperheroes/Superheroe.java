@@ -38,9 +38,4 @@ public class Superheroe {
                 ", capa=" + capa +
                 '}';
     }
-
-    public static void main(String[] args) {
-        Superheroe jose = new Superheroe("Jose");
-        System.out.println(jose);
-    }
 }

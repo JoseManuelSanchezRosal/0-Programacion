@@ -1,5 +1,4 @@
-package POO.POO_1ejercicios_conceptos.Electrodomesticos;
-
+package Electrodomesticos;
 import javax.swing.text.AbstractDocument;
 
 //CLASE ELECTRODOMESTICO CON SUS PROPIEDADES:
@@ -40,9 +39,9 @@ public class Electrodomestico {
     @Override
     public String toString() {
         return "{" +
-                "Tipo ='" + tipo + '\'' +
-                ", Marca ='" + marca + '\'' +
-                ", Potencia =" + potencia +
+                "Tipo: '" + tipo + '\'' +
+                ", Marca: '" + marca + '\'' +
+                ", Potencia: " + potencia +
                 '}';
     }
 
@@ -50,5 +49,11 @@ public class Electrodomestico {
     public double getConsumo(int horas){
         double consumo = getPotencia() * horas;
         return consumo;
+    }
+
+    //METODO PARA SABER EL COSTE SEGUN CONSUMO Y PRECIO POR KW/H:
+    public double getCosteConsumo(int horas, double costeHora){
+        double coste = (getPotencia()/100) * horas * costeHora;
+        return coste;
     }
 }
